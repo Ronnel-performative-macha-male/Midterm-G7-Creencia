@@ -1,15 +1,11 @@
-import { useState } from "react";
-import StatCard from "./StatCard";
-import Hire from "./Hire";
-import Bio from './Bio';
-    const Controls = () => {
-      
 
+import Hire from "./Hire";
+    const Controls = () => {
+    
     return(
-       
-       
+    
         <div className="flex gap-4">
-            <Hire rate={rate}/>
+     
           <button
             className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
             onClick={handleFollow}
