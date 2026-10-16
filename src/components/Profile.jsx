@@ -1,7 +1,9 @@
 import { useState } from "react";
 import StatCard from "./StatCard";
+import Hire from "./Hire";
 import Bio from './Bio';
     const Profile = () => {
+       
  const [followers, setFollowers] = useState(0);
   const [rate, setRate] = useState(500);
       function handleFollow() {
@@ -16,6 +18,8 @@ import Bio from './Bio';
     setFollowers(0);
     setRate(500);
   }
+
+
     return(
         <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
@@ -25,8 +29,9 @@ import Bio from './Bio';
             <StatCard value={rate} label="PHP per hour"/>
           </div>
         </div>
-
+       
         <div className="flex gap-4">
+            <Hire rate={rate}/>
           <button
             className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
             onClick={handleFollow}
@@ -45,6 +50,7 @@ import Bio from './Bio';
           >
             Reset
           </button>
+           
         </div>
       </div>
         );
