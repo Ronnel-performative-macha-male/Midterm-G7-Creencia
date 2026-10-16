@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StatCard from "./StatCard";
 import Bio from './Bio';
     const Profile = () => {
  const [followers, setFollowers] = useState(0);
